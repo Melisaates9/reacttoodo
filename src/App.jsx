@@ -14,7 +14,23 @@ function App() {
 
     
   `
-function changeInput(e){
+
+  const Input= styled.input`
+  padding: 10px;
+
+  
+  `
+  const Button=styled.button`
+padding: 10px;
+ background-color:black;
+ color: white
+ ;
+ border: 2px solid 
+
+  `
+
+
+  function changeInput(e){
   setInput(e.target.value)
 }
 
@@ -33,15 +49,15 @@ function deleteTodo(value) {
     <Wrapper>
 
    
-      <input
+      <Input
       onChange={changeInput}
       value={input}
 type="text"
 autoFocus
 />
-      <button onClick={addToDo}>
+      <Button onClick={addToDo}>
         Ekle
-      </button>
+      </Button>
       <div>
         <ul style={{cursor:'pointer'}}>
           {
