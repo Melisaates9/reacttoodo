@@ -6,7 +6,7 @@ function App() {
   const [input,setInput]=useState('')
   const [todos,setTodos]=useState([])
   const Wrapper = styled.div`
-  background:#3498db;
+
   text-align:center;
   height:100vh;
   padding-top:300px;
@@ -22,7 +22,7 @@ function App() {
   `
   const Button=styled.button`
 padding: 10px;
- background-color:black;
+background-color: #49416d;
  color: white
  ;
  border: 2px solid 
